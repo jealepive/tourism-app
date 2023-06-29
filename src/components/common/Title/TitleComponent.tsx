@@ -7,7 +7,7 @@ type TitleComponentProps = {
 function TitleComponent(props: TitleComponentProps): JSX.Element {
     return (
         <>
-            <Typography variant="h1">{props.text}</Typography>                        
+            <Typography variant="h1">{props.text}</Typography>                              
         </>    
     );
 }
