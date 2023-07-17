@@ -1,22 +1,23 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;    
-  }
-  
-  .logo {
-    width: 50px;
-  }
-  
-  .sections {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .sections a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.logo {
+  width: 50px;
+}
+
+.sections {
+  display: flex;
+  gap: 20px;
+}
+
+.sections a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}

@@ -7,7 +7,7 @@ type SubtitleComponentProps = {
 function SubtitleComponent(props: SubtitleComponentProps){
     return(
         <>
-            <Typography variant="h2">{props.text}</Typography>            
+            <Typography variant="h4">{props.text}</Typography>            
         </>
     );
 }
