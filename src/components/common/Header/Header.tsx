@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
-import { Button, Toolbar } from '@mui/material';
+import { Box, Button, Toolbar } from '@mui/material';
 import logo from '../../../assets/logo.png';
-import './HeaderComponent.css';
+import './Header.scss';
 import { language } from '../../../utils/lang.en';
 
 type Section = {
@@ -15,21 +15,21 @@ const sections: Section[] = [
   { name: language.contactPageName, link: '/contact' },
 ];
 
-const HeaderComponent: React.FC = () => {
+const Header: React.FC = () => {
   const navigate = useNavigate();
 
   return (
     <Toolbar className='header'>
-      <img className='logo' src={logo} alt='logo' />
-      <div className='sections'>
+      <img className='header__logo' src={logo} alt='logo' />
+      <Box className='header__sections'>
         {sections.map((section, index) => (
           <Button key={index} color='inherit' onClick={() => navigate(section.link)}>
             {section.name}
           </Button>
         ))}
-      </div>
+      </Box>
     </Toolbar>
   );
 };
 
-export default HeaderComponent;
+export default Header;

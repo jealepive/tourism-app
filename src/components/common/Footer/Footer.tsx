@@ -1,16 +1,16 @@
 import { Box, Grid, Typography, Link } from '@mui/material';
 import React from 'react';
 import logo from '../../../assets/logo.png';
-import './FooterComponent.css';
+import './Footer.scss';
 import { language } from '../../../utils/lang.en';
 
-const FooterComponent: React.FC = () => {
+const Footer: React.FC = () => {
   return (
     <Box className='footer'>
-      <Grid container className='footer container'>
+      <Grid container className='footer__container'>
         <Grid item xs={12} md={6}>
           <Box display='flex' alignItems='center'>
-            <img src={logo} alt='Logo' className='footer logo' />
+            <img src={logo} alt='Logo' className='footer__logo' />
             <Typography variant='h6' component='h1'>
               {language.greeting}
             </Typography>
@@ -18,25 +18,25 @@ const FooterComponent: React.FC = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <Box display='flex' justifyContent='flex-end'>
-            <Box className='footer section'>
+            <Box className='footer__section'>
               <Typography variant='h6' component='h2'>
                 Social
               </Typography>
-              <Link href='#' className=' footer link'>
+              <Link href='#' className='footer__section__link'>
                 Facebook
               </Link>
-              <Link href='#' className=' footer link'>
+              <Link href='#' className='footer__section__link'>
                 Instagram
               </Link>
             </Box>
-            <Box className='footer section'>
+            <Box className='footer__section'>
               <Typography variant='h6' component='h2'>
                 About
               </Typography>
-              <Link href='#' className=' footer link'>
+              <Link href='#' className='footer__section__link'>
                 Contact Us
               </Link>
-              <Link href='#' className=' footer link'>
+              <Link href='#' className='footer__section__link'>
                 Privacy Policy
               </Link>
             </Box>
@@ -52,4 +52,4 @@ const FooterComponent: React.FC = () => {
   );
 };
 
-export default FooterComponent;
+export default Footer;

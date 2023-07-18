@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { DataContext } from '../../../pages/Home/HomePage';
-import { Grid, Box } from '@mui/material';
+import { Grid } from '@mui/material';
 import { ITouristicAttraction } from '../../../utils/types';
 import TouristicPlaceCard from '../TouristicPlaceCard/TouristicPlaceCard';
 

@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AboutPage from './pages/About/AboutPage';
 import ContactPage from './pages/Contact/ContactPage';
-import FooterComponent from './components/common/Footer/FooterComponent';
+import Footer from './components/common/Footer/Footer';
 import { HomePage } from './pages/Home/HomePage';
 import { ThemeProvider, createTheme } from '@mui/material';
 
@@ -30,7 +30,7 @@ function App() {
           <Route Component={AboutPage} path='/about' />
           <Route Component={ContactPage} path='/contact' />
         </Routes>
-        <FooterComponent />
+        <Footer />
       </BrowserRouter>
     </ThemeProvider>
   );

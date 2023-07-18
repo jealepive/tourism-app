@@ -1,0 +1,24 @@
+.touristic-place {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__card {
+    position: relative;
+    max-width: 350px;
+    min-height: 450px;
+
+    &__description {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    &__button {
+      position: absolute !important;
+      bottom: 0px;
+    }
+  }
+}

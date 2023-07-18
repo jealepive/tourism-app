@@ -1,0 +1,33 @@
+.footer {
+  background-color: #214076;
+  color: white;
+  padding: 16px;
+
+  &__container {
+    width: 1200px !important;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  &__logo {
+    height: 64px;
+    width: auto; /*Adjust the logo width according to the aspect ratio*/
+  }
+
+  &__section {
+    display: flex; /* Use flex layout for the sections*/
+    flex-direction: column; /* Arrange the items in a column*/
+    align-items: flex-start; /* Align the items to the start*/
+    margin: 8px; /*Add some margin around the sections*/
+
+    &__link {
+      color: white;
+      text-decoration: none;
+    }
+
+    &__link:hover {
+      text-decoration: underline;
+    }
+  }
+}
